@@ -13,7 +13,7 @@ app.use(express.json());
 
 // Serve static files
 // app.use(express.static(path.join(__dirname, 'build')));
-// app.get('*', (req, res) => {
+// app.get('https://ai-bot-tqg9.onrender.com', (req, res) => {
 //   res.sendFile(path.join(__dirname, 'build', 'index.html'));
 // });
 
