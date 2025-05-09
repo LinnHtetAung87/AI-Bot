@@ -4,9 +4,10 @@
   "description": "Backend server for AI Chat application",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "dev": "nodemon server.js",
-    "build-frontend": "cd ../frontend/vite-project && yarn install && yarn run build"
+    "build-frontend": "cd ../frontend/vite-project && yarn install && yarn build",
+    "copy-frontend": "rm -rf build && cp -r ../frontend/vite-project/dist build",
+    "build": "yarn run build-frontend && yarn run copy-frontend",
+    "start": "node server.js"
   },
   "dependencies": {
     "cors": "^2.8.5",
