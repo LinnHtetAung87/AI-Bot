@@ -19,7 +19,7 @@ const openai = new OpenAI({
 });
 
 // Chat endpoint
-app.post('https://ai-bot-tqg9.onrender.com/api/chat', async (req, res) => {
+app.post('./api/chat', async (req, res) => {
   try {
     const { message } = req.body;
 
