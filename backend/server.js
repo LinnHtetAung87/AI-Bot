@@ -28,7 +28,7 @@ app.post('/api/chat', async (req, res) => {
     }
 
     const completion = await openai.chat.completions.create({
-      model: "qwen/qwen3-1.7b:free",
+      model: "nvidia/llama-3.3-nemotron-super-49b-v1:free",
       messages: [
         {
           role: "system",
