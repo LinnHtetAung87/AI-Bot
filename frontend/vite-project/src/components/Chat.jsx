@@ -168,7 +168,7 @@ setCity(`${data.name}, ${data.sys.country}`);
     setIsLoading(true);
 
     try {
-      const response = await fetch('http://localhost:3000/api/chat', {
+      const response = await fetch('https://ai-bot-tqg9.onrender.com/api/chat', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
