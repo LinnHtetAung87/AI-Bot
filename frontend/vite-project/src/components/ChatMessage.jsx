@@ -14,7 +14,7 @@ const ChatMessage = ({ message, isAi }) => {
       <div className="flex-1 space-y-2">
         <div className="flex items-center">
           <p className={`font-medium ${isAi ? 'text-blue-900' : 'text-green-900'}`}>
-            {isAi ? 'Progskill AI Assistant' : 'You'}
+            {isAi ? 'AI Assistant' : 'You'}
           </p>
         </div>
         <div className="prose prose-sm max-w-none">
